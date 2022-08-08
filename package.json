@@ -8,7 +8,7 @@
         "start": "nodemon server.js"
     },
     "engines": {
-        "node": "16.0x"
+        "node": "16.x"
     },
     "keywords": [],
     "author": "",
