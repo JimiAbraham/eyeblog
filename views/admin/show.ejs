@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <link rel="shortcut icon" href="https://dashlite.net/demo3/images/favicon.png">
+    <title>Add Plugins | CMS | DashLite Admin Template</title>
+    <link rel="stylesheet" href="https://dashlite.net/demo3/assets/css/dashlite.css?ver=3.0.3">
+    <link id="skin-default" rel="stylesheet" href="https://dashlite.net/demo3/assets/css/theme.css?ver=3.0.3">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91615293-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-91615293-4');
+    </script>
+</head>
+
+<body class="nk-body npc-default has-apps-sidebar has-sidebar ">
+    <div class="nk-app-root">
+        <div class="nk-apps-sidebar is-theme">
+            <div class="nk-apps-brand">
+                <a href="https://dashlite.net/demo3/index.html" class="logo-link"><img class="logo-light logo-img" src="https://dashlite.net/demo3/images/logo-small.png" srcset="/demo3/images/logo-small2x.png 2x" alt="logo"><img class="logo-dark logo-img" src="https://dashlite.net/demo3/images/logo-dark-small.png" srcset="/demo3/images/logo-dark-small2x.png 2x"
+                        alt="logo-dark"></a>
+            </div>
+
+
+            <div class="nk-sidebar-profile nk-sidebar-profile-fixed dropdown">
+                <a href="#" class="toggle" data-target="profileDD">
+                    <div class="user-avatar"><span>AB</span></div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-md m-1 nk-sidebar-profile-dropdown" data-content="profileDD">
+                    <div class="dropdown-inner user-card-wrap d-none d-md-block">
+                        <div class="user-card">
+                            <div class="user-avatar"><span>AB</span></div>
+                            <div class="user-info"><span class="lead-text">Abu Bin Ishtiyak</span><span class="sub-text text-soft">info@softnio.com</span></div>
+                        </div>
+                    </div>
+                    <div class="dropdown-inner">
+                        <ul class="link-list">
+                            <li><a href="https://dashlite.net/demo3/user-profile-regular.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                            <li><a href="https://dashlite.net/demo3/user-profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
+                            <li><a href="https://dashlite.net/demo3/user-profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-inner">
+                        <ul class="link-list">
+                            <li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="nk-main ">
+            <div class="nk-wrap ">
+                <div class="nk-header nk-header-fixed is-light">
+                    <div class="container-fluid">
+
+                    </div>
+                </div>
+                <!-- navbar -->
+
+                <%- include('./includes/sideNav') -%>
+
+                    <!-- navbar -->
+                    <div class="nk-content ">
+                        <div class="container-fluid">
+                            <div class="nk-content-inner">
+                                <div class="nk-content-body">
+                                    <div class="nk-block-head nk-block-head-sm">
+                                        <div class="nk-block-between pos-rel">
+                                            <div class="nk-block-head-content">
+                                                <h3 class="nk-block-title page-title">Newly Added Article</h3>
+
+                                            </div>
+                                            <div class="nk-block-head-content">
+                                                <ul class="nk-block-tools g-3">
+                                                    <li><a href="#" class="btn btn-icon search-toggle toggle-search" data-target="search"><em class="icon ni ni-search"></em></a></li>
+                                                    <li><a data-bs-toggle="modal" href="#addPlugin" class="btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
+                                                        <a href="edit/<%= JustSavedData.id %>" class="btn btn-primary d-none d-md-inline-flex"><em class="icon ni ni-plus"></em><span>Edit Article</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-search search-wrap border" data-search="search">
+                                                <div class="card-body py-0">
+                                                    <div class="search-content"><a href="#" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a><input type="text" class="form-control border-transparent form-focus-none" placeholder="Search by Author Name or Post Title">
+                                                        <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nk-block">
+                                        <div class="row g-gs">
+
+
+
+
+
+
+
+
+
+                                            <div class="col-xxl-6">
+                                                <div class="card card-bordered">
+                                                    <div class="card-inner d-md-inline-flex">
+                                                        <div class="card-body align-center ps-0 ps-md-4">
+                                                            <div class="info">
+                                                                <h6 class="title"><span class="name">
+                                                         Title: <%= JustSavedData.title %></span></h6>
+                                                                <div class="meta"><span class="version"><span class="text-soft">Body: </span> <span><%- JustSavedData.body %></span></span><br><span class="release"><span class="text-soft">slug: </span>
+                                                                    <span class="text-pink"> <%= JustSavedData.slug %></span></span>
+                                                                    <br> <span class="release"><span class="text-soft">Date: </span>
+                                                                    <span class="text-pink"> <%= JustSavedData.createdAt.toLocaleDateString() %></span></span>
+                                                                    <br> <span class="release"><span class="text-soft">image: </span>
+                                                                    <img class="image" src="data:image/<%=JustSavedData.img.contentType%>;base64,<%=JustSavedData.img.data.toString('base64')%>">
+
+
+
+
+
+
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://dashlite.net/demo3/assets/js/bundle.js?ver=3.0.3"></script>
+    <script src="https://dashlite.net/demo3/assets/js/scripts.js?ver=3.0.3"></script>
+    <script src="https://dashlite.net/demo3/assets/js/demo-settings.js?ver=3.0.3"></script>
+</body>
+<!-- Mirrored from dashlite.net/demo3/cms/plugin-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Jul 2022 01:48:33 GMT -->
+
+</html>

@@ -1,0 +1,65 @@
+<div class="row g-gs">
+    <div class="col-12">
+        <div class="form-group">
+            <label class="form-label" for="addTitle">Title</label>
+
+            <input type="text" name="title" value="<%= oldArticle.title %>" class="form-control" id="addTitle" placeholder="Title">
+        </div>
+    </div>
+
+
+    <!-- <div class="col-12">
+        <div class="form-group">
+            <label class="form-label" for="addTitle">Category</label>
+
+            <input type="text" name="category" value="<%= oldArticle.category %>" class="form-control" id="addTitle" placeholder="Article Category">
+        </div>
+    </div> -->
+
+    <div class="col-12">
+        <div class="form-group">
+            <label class="form-label" for="addTitle">Category</label>
+            <select class="form-control" name="category">
+
+                <option value="">Choose Category</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Eye-Protect">Eye-Protect</option>
+                <option value="Pathology">Pathology</option>
+                <option value="Occupational">Occupational</option>
+                <option value="Lifestyle">Lifestyle</option>
+
+                
+
+                
+                
+            </select>
+
+        </div>
+    </div>
+
+
+    <div class="col-12">
+        <div class="form-group">
+            <label class="form-label" for="addTitle">Content</label>
+            <textarea name="body" id="mytextarea" value="" class="form-control"><%= oldArticle.body %> </textarea>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-group">
+            <label class="form-label" for="addTitle">Markdown</label>
+            <textarea name="markdown" value="<%= oldArticle.markdown %>" class="form-control"><%= oldArticle.body %> </textarea>
+        </div>
+    </div>
+</div>
+<br>
+<div class="col-12">
+    <div class="form-group">
+        <label class="form-label" for="addTitle">Image Upload 1</label>
+        <input type="file" name="pic1" value="<%= oldArticle.category %>" class="form-control" accept='image/*' multiple>
+    </div>
+</div>
+<br>
+
+
+<li><button type="submit" class="btn btn-primary">Publish Post</button></li>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+
+
+<%- include('./inc/header.ejs') %>
+
+    <body class="post-template-default single single-post postid-638 single-format-video wp-embed-responsive single-3 wpb-js-composer js-comp-ver-5.7 vc_responsive">
+        <div id=page class="wrapper site">
+            <div class=canvas-overlay></div>
+
+            <%- include('./inc/nav.ejs') %>
+
+
+                <div id=content class=site-content>
+                    <div class="wrap-content single-delicate" role=main>
+                        <div class=container>
+                            <div class="row single-main-content">
+                                <div class="main-content content-full col-sx-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class=content-inner>
+                                        <div class="box box-article">
+                                            <article id=post-638 class="post-638 post type-post status-publish format-video has-post-thumbnail hentry category-fashion-style category-tips-tricks tag-health tag-lifestyle tag-live tag-travel post_format-post-format-video">
+                                                <div class="embed-responsive single-image embed-responsive-16by9 post-video single-video embed-responsive embed-responsive-16by9">
+                                                    <iframe title="How To Dress for Work: Chic 9-5 Style  | NET-A-PORTER" width=660 height=371 src="https://www.youtube.com/embed/xpVfcZ0ZcFM" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                                <div class="entry-header clearfix">
+                                                    <header class=entry-header-title>
+                                                        <h1 class="entry-title">
+                                                            <%= JustSavedData.title %>
+                                                        </h1>
+                                                    </header>
+                                                    <div class="entry-avatar clearfix">
+                                                        <div class=avatar-image>
+                                                            <img alt src='../jimi2.jpeg' class='avatar avatar-50 photo' height=50 width=50></div>
+                                                        <div class=avatar-meta>
+                                                            <span class=author-title>
+<a
+class=author-link href="/articles/aboutMe" rel=author>Jimi Adesokan </a>
+</span>
+                                                            <span class=post-date>
+<span
+class=posted-on><span
+class=screen-reader-text>Posted on </span><a href=index.html rel=bookmark><time
+class="entry-date published" datetime=2017-07-29T09:10:55+00:00>   <%= JustSavedData.createdAt.toLocaleDateString() %></time><time
+class=updated datetime=2018-12-05T02:26:33+00:00> <%= JustSavedData.createdAt.toLocaleDateString() %></time></a></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-content clearfix">
+                                                    <blockquote>
+                                                        <p>
+                                                            <%=  JustSavedData.markdown %>
+                                                        </p>
+                                                    </blockquote>
+                                                    <div class="entry-content clearfix"></div>
+
+
+                                                    <div class=entry-content-inner>
+                                                        <p>
+                                                            <%- JustSavedData.body  %>
+                                                        </p>
+                                                        <p>
+
+                                                            <!-- <img class="size-full wp-image-1913 aligncenter" src=../../../../wp-content/uploads/2017/08/single2.jpg alt width=1000 height=527 srcset="https://ganesa.nanothemes.co/wp-content/uploads/2017/08/single2.jpg 1000w, https://ganesa.nanothemes.co/wp-content/uploads/2017/08/single2-300x158.jpg 300w, https://ganesa.nanothemes.co/wp-content/uploads/2017/08/single2-768x405.jpg 768w"
+                                                                sizes="(max-width: 1000px) 100vw, 1000px"></p> -->
+
+                                                            <div class=space></div>
+
+
+
+                                                            <figure id=attachment_1914 aria-describedby=caption-attachment-1914 style="width: 970px" class="wp-caption aligncenter"><img class="wp-image-1914 size-full" class="image" src="data:image/<%=JustSavedData.img.contentType%>;base64,
+                                                                <%=JustSavedData.img.data.toString('base64')%>" alt width=970 height=450>
+                                                                <figcaption id=caption-attachment-1914 class=wp-caption-text>Suspendisse laoreet ut ligula et semper.</figcaption>
+                                                            </figure>
+
+                                                            <div class=space></div>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="entry-footer clearfix">
+                                                    <div class=entry-footer-left>
+                                                        <div class=tags-wrap>
+                                                            <span class=tags-title> Tags: </span>
+                                                            <span class=tags>
+<a
+href=../../../../tag/health/index.html rel=tag>health</a>, <a
+href=../../../../tag/lifestyle/index.html rel=tag>lifestyle</a>, <a
+href=../../../../tag/live/index.html rel=tag>live</a>, <a
+href=../../../../tag/travel/index.html rel=tag>travel</a>  </span></div>
+                                                    </div>
+
+
+                                                    <div class=share-bottom>
+                                                        <div class="social share-links clearfix">
+                                                            <ul class="social-icons list-unstyled list-inline">
+                                                                <li class="social-item facebook">
+                                                                    <a href="http://www.facebook.com/sharer.php?u=localhost:5000/articles/<%=JustSavedData.slug%>" title=facebook class="post_share_facebook facebook" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=220,width=600');return false;">
+                                                                        <i class="fa fa-facebook"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="social-item twitter">
+                                                                    <a href="https://twitter.com/share?url=http://localhost:5000/articles/<%=JustSavedData.slug%>/&amp;text=<%= JustSavedData.title %>&amp;via=JimiAbraham3 " title=twitter onclick="javascript:window.open(this.href, '',
+                                                                        'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600');return false; " class="product_share_twitter twitter ">
+                                                                        <i class="fa fa-twitter "></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li class="social-item linkedin ">
+                                                                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:5000/articles/<%=JustSavedData.slug%>/&amp;title=pinterest&amp;summary=Want+A+More+Sustainable+Closet%3F&amp;source=Want%20A%20More%20Sustainable%20Closet? ">
+                                                                        <i class="fa fa-linkedin "></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="social-item pinterest ">
+                                                                    <a href="http://pinterest.com/pin/create/button/?url=https://ganesa.nanothemes.co/2017/07/29/group-of-five-female-sportswomen-having-legs-muscles-stretching-exercises-with-fitballs/&amp;media=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga18.jpg&amp;description=Want+A+More+Sustainable+Closet%3F "
+                                                                        title=pinterest class=pinterest>
+                                                                        <i class="fa fa-pinterest "></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+
+
+                                        <%- include('./inc/author') %>
+
+
+                                            <div id=comments class="box box-comment ">
+                                                <div class=comments-list></div>
+                                                <div class=commentform>
+                                                    <div id=respond class=comment-respond>
+                                                        <h3 id="reply-title " class="comment-reply-title "><span class="heading widgettitles ">Leave a Comment</span> <small><a
+rel=nofollow id=cancel-comment-reply-link href=index.html#respond style=display:none;>Cancel reply</a></small></h3>
+                                                        <form action=https://ganesa.nanothemes.co/wp-comments-post.php method=post id=commentform class=comment-form novalidate>
+                                                            <p class=h-info>Your email address will not be published.</p>
+                                                            <div class=row>
+                                                                <div class="form-group col-md-6 ">
+                                                                    <input type=text name=author placeholder=Name* class=form-control id=author value aria-required=true></div>
+                                                                <div class="form-group col-md-6 ">
+                                                                    <input id=email name=email class=form-control placeholder=Email* type=text value aria-required=true></div>
+                                                            </div>
+                                                            <div class=form-group>
+                                                                <input id=url name=url class=form-control placeholder=Website type=text value></div>
+                                                            <div class=form-group><textarea rows=8 id=comment class=form-control placeholder=Comment* name=comment aria-required=true></textarea></div>
+                                                            <p class=form-submit><input name=submit type=submit id=submit class=submit value="Post Comment "> <input type=hidden name=comment_post_ID value=638 id=comment_post_ID>
+                                                                <input type=hidden name=comment_parent id=comment_parent value=0></p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="archive-blog post-related layout-grid description-s ">
+                                                <h4 class=" box-title title-left ">
+                                                    You may like</h4>
+                                                <div class=row>
+
+                                                    <% similar.forEach( article => {  %>
+
+
+                                                        <div class="col-xs-12 col-sm-4 col-md-4 item-related hidden-description hidden-cate hidden-metas ">
+                                                            <article class="post-item post-grid clearfix post-653 post type-post status-publish format-video has-post-thumbnail hentry category-tips-tricks tag-health tag-lifestyle tag-live tag-travel post_format-post-format-video ">
+                                                                <div class="article-tran hover-share-item ">
+                                                                    <div class=post-image>
+                                                                        <a href=/articles/<%=article.slug%> lass=bgr-item></a>
+                                                                        <a href="/articles/<%=article.slug%>">
+                                                                            <img class=lazy src="data:image/<%=article.img.contentType%>;base64,
+                                                                            <%=article.img.data.toString('base64')%>" >
+                                                                        </a>
+                                                                        <div class=social-share>
+                                                                            <div class="social share-links clearfix ">
+                                                                                <ul class="social-icons list-unstyled list-inline ">
+                                                                                    <li class="social-item facebook ">
+                                                                                        <a href="http://www.facebook.com/sharer.php?u=https://ganesa.nanothemes.co/2017/07/29/vacationidea-lazy-days-in-oahu-hawaii/ " title=facebook class="post_share_facebook
+                                                                        facebook " onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=220,width=600');return false; ">
+                                                                                            <i class="fa fa-facebook "></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="social-item twitter ">
+                                                                                        <a href="https://twitter.com/share?url=https://ganesa.nanothemes.co/2017/07/29/vacationidea-lazy-days-in-oahu-hawaii/&amp;text=Kourtney+Kardashian+and+Kendall+Jenner&amp;via=Zishan+Joyce
+                                                                        " title=twitter onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600');return false; " class="product_share_twitter twitter ">
+                                                                                            <i class="fa fa-twitter "></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="social-item google ">
+                                                                                        <a href="https://plus.google.com/share?url=https://ganesa.nanothemes.co/2017/07/29/vacationidea-lazy-days-in-oahu-hawaii/ " class=googleplus title="google +
+                                                                        " onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false; ">
+                                                                                            <i class="fa fa-google-plus "></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="social-item linkedin ">
+                                                                                        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ganesa.nanothemes.co/2017/07/29/vacationidea-lazy-days-in-oahu-hawaii/&amp;title=pinterest&amp;summary=Kourtney+Kardashian+and+Kendall+Jenner&amp;source=Kourtney%20Kardashian%20and%20Kendall%20Jenner ">
+                                                                                            <i class="fa fa-linkedin "></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="social-item pinterest ">
+                                                                                        <a href="http://pinterest.com/pin/create/button/?url=https://ganesa.nanothemes.co/2017/07/29/vacationidea-lazy-days-in-oahu-hawaii/&amp;media=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/blog16-1.jpg&amp;description=Kourtney+Kardashian+and+Kendall+Jenner "
+                                                                                            title=pinterest class=pinterest>
+                                                                                            <i class="fa fa-pinterest "></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=article-content>
+                                                                        <div class="entry-header clearfix ">
+                                                                            <header class=entry-header-title>
+                                                                                <h3 class="entry-title ">
+                                                                                    <a href=../vacationidea-lazy-days-in-oahu-hawaii/index.html rel=bookmark>
+                                                                                        <%= article.title  %>
+                                                                                    </a>
+                                                                                </h3>
+                                                                            </header>
+                                                                            <span class=post-cat>  <a
+href=../../../../category/tips-tricks/index.html   title="View all posts in Tips &amp; Tricks " >
+<% article.category %>  </a>
+</span>
+                                                                            <div class="article-meta clearfix ">
+                                                                                <span class=posted-on><span
+class=screen-reader-text>Posted on </span><a href=../vacationidea-lazy-days-in-oahu-hawaii/index.html rel=bookmark><time
+class="entry-date published " datetime=2017-07-29T09:19:36+00:00>July 29, 2017</time><time
+class=updated datetime=2018-12-08T04:57:17+00:00>December 8, 2018</time></a></span>
+                                                                            </div>
+                                                                            <div class="entry-content hidden ">
+                                                                                <%- article.body.slice(0, 60).concat('...')  %>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                            </article>
+                                                            </div>
+                                                            <%  })   %>
+
+
+
+                                                        </div>
+                                                </div>
+                                                <div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+                                                    <div class=pswp__bg></div>
+                                                    <div class=pswp__scroll-wrap>
+                                                        <div class=pswp__container>
+                                                            <div class=pswp__item></div>
+                                                            <div class=pswp__item></div>
+                                                            <div class=pswp__item></div>
+                                                        </div>
+                                                        <div class="pswp__ui pswp__ui--hidden ">
+                                                            <div class=pswp__top-bar>
+                                                                <div class=pswp__counter></div><button class="pswp__button pswp__button--close " title="Close (Esc) "></button><button class="pswp__button pswp__button--share
+                                                                        " title=Share></button><button class="pswp__button pswp__button--fs " title="Toggle fullscreen "></button>
+                                                                <button class="pswp__button pswp__button--zoom " title="Zoom in/out "></button>
+                                                                <div class=pswp__preloader>
+                                                                    <div class=pswp__preloader__icn>
+                                                                        <div class=pswp__preloader__cut>
+                                                                            <div class=pswp__preloader__donut></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap ">
+                                                                <div class=pswp__share-tooltip></div>
+                                                            </div><button class="pswp__button pswp__button--arrow--left " title="Previous (arrow left) ">
+</button><button class="pswp__button pswp__button--arrow--right " title="Next (arrow right) ">
+</button>
+                                                            <div class=pswp__caption>
+                                                                <div class=pswp__caption__center></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%- include('./inc/footer')  %>
+                </div>
+                <script>
+                    (function() {
+                        function addEventListener(element, event, handler) {
+                            if (element.addEventListener) {
+                                element.addEventListener(event, handler, false);
+                            } else if (element.attachEvent) {
+                                element.attachEvent('on' + event, handler);
+                            }
+                        }
+
+                        function maybePrefixUrlField() {
+                            if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+                                this.value = "http:// " + this.value;
+                            }
+                        }
+                        var urlFields = document.querySelectorAll('.mc4wp-form input[type="url "]');
+                        if (urlFields && urlFields.length > 0) {
+                            for (var j = 0; j < urlFields.length; j++) {
+                                addEventListener(urlFields[j], 'blur', maybePrefixUrlField);
+                            }
+                        }
+                        var testInput = document.createElement('input');
+                        testInput.setAttribute('type', 'date');
+                        if (testInput.type !== 'date') {
+                            var dateFields = document.querySelectorAll('.mc4wp-form input[type="date "]');
+                            for (var i = 0; i < dateFields.length; i++) {
+                                if (!dateFields[i].placeholder) {
+                                    dateFields[i].placeholder = 'YYYY-MM-DD';
+                                }
+                                if (!dateFields[i].pattern) {
+                                    dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+                                }
+                            }
+                        }
+                    })();
+                </script>
+                <script>
+                    var wpcf7 = {
+                        "apiSettings ": {
+                            "root ": "https:\/\/ganesa.nanothemes.co\/wp-json\/contact-form-7\/v1 ",
+                            "namespace ": "contact-form-7\/v1 "
+                        },
+                        "cached ": "1 "
+                    };
+                </script>
+                <script src=../../../../wp-content/cache/minify/c903a.js></script>
+                <script>
+                    var NaScript = {
+                        "home_url ": "https:\/\/ganesa.nanothemes.co\/ ",
+                        "ajax_url ": "https:\/\/ganesa.nanothemes.co\/wp-admin\/admin-ajax.php?_wpnonce=8ed11daafd ",
+                        "admin_theme_url ": "https:\/\/ganesa.nanothemes.co\/wp-admin\/themes.php?_wpnonce=8ed11daafd "
+                    };
+                </script>
+                <script src=../../../../wp-content/cache/minify/309d3.js></script>
+                <script>
+                    var mc4wp_forms_config = [];
+                </script>
+                <script src=../../../../wp-content/cache/minify/29e8b.js></script>
+                <!--[if lte IE 9]> <script src='https://ganesa.nanothemes.co/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.5.0'></script> <![endif]-->
+    </body>
+
+</html>

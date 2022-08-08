@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+<%- include('./inc/header.ejs') %>
+
+
+    <body class="archive category category-lifestyle category-7 wp-embed-responsive single-3 wpb-js-composer js-comp-ver-5.7 vc_responsive">
+        <div id=page class="wrapper site">
+            <div class=canvas-overlay></div>
+
+
+
+            <%- include('./inc/nav.ejs') %>
+
+                <div id=content class=site-content>
+                    <div class="wrap-content container" role=main>
+                        <h1 class="title-cat">
+                            <%= cat  %> Articles</h1>
+                        <div class="row content-category cats-list">
+                            <div class="main-content content-right col-sx-12 col-sm-12 col-md-9 col-lg-9">
+                                <div class=main-content-inner>
+                                    <div class="archive-blog  row ">
+                                        <div class="rows affect-isotopes">
+
+
+
+                                            <%    category.forEach(  articleCat => {  %>
+                                                <div class="item-post col-item col-md-12 col-sm-12 col-xs-12">
+                                                    <article class="post-item post-list clearfix post-648 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle category-tips-tricks tag-health tag-lifestyle tag-live tag-travel">
+                                                        <div class=article-image>
+                                                            <div class=post-image>
+                                                                <span class=bgr-item></span>
+                                                                <a href=../../2017/07/29/exercises-to-keep-your-heart-healthy/index.html>
+                                                                    <img class=lazy src=../../wp-content/themes/ganesa/assets/images/layzyload-list.jpg data-src=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga4-720x427.jpg alt=post-image>
+                                                                </a>
+                                                            </div>
+                                                            <div class=social-share>
+                                                                <div class="social share-links clearfix">
+                                                                    <ul class="social-icons list-unstyled list-inline">
+                                                                        <li class="social-item facebook">
+                                                                            <a href="http://www.facebook.com/sharer.php?u=https://ganesa.nanothemes.co/2017/07/29/exercises-to-keep-your-heart-healthy/" title=facebook class="post_share_facebook facebook" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=220,width=600');return false;">
+                                                                                <i class="fa fa-facebook"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="social-item twitter">
+                                                                            <a href="https://twitter.com/share?url=https://ganesa.nanothemes.co/2017/07/29/exercises-to-keep-your-heart-healthy/&amp;text=Exercises+to+Keep+Your+Heart+Healthy.&amp;via=Zishan+Joyce" title=twitter onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600');return false;"
+                                                                                class="product_share_twitter twitter">
+                                                                                <i class="fa fa-twitter"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="social-item google">
+                                                                            <a href="https://plus.google.com/share?url=https://ganesa.nanothemes.co/2017/07/29/exercises-to-keep-your-heart-healthy/" class=googleplus title="google +" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                                                                                <i class="fa fa-google-plus"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="social-item linkedin">
+                                                                            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ganesa.nanothemes.co/2017/07/29/exercises-to-keep-your-heart-healthy/&amp;title=pinterest&amp;summary=Exercises+to+Keep+Your+Heart+Healthy.&amp;source=Exercises%20to%20Keep%20Your%20Heart%20Healthy.">
+                                                                                <i class="fa fa-linkedin"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="social-item pinterest">
+                                                                            <a href="http://pinterest.com/pin/create/button/?url=https://ganesa.nanothemes.co/2017/07/29/exercises-to-keep-your-heart-healthy/&amp;media=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga4.jpg&amp;description=Exercises+to+Keep+Your+Heart+Healthy."
+                                                                                title=pinterest class=pinterest>
+                                                                                <i class="fa fa-pinterest"></i>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="article-content ">
+                                                            <div class="entry-header clearfix">
+                                                                <header class=entry-header-title>
+                                                                    <h3 class="entry-title">
+                                                                        <a href=../../2017/07/29/exercises-to-keep-your-heart-healthy/index.html rel=bookmark>
+                                                                            <%=    articleCat.title  %>
+                                                                        </a>
+                                                                    </h3>
+                                                                </header>
+                                                            </div>
+                                                            <span class=post-cat>  <a
+href=index.html   title="View all posts in Lifestyle" >
+<%=    articleCat.category  %> </a>
+</span>
+                                                            <div class="article-meta clearfix">
+                                                                <span class=posted-on><span
+class=screen-reader-text>Posted on </span><a href=../../2017/07/29/exercises-to-keep-your-heart-healthy/index.html rel=bookmark><time
+class="entry-date published" datetime=2017-07-29T09:14:44+00:00>July 29, 2017</time><time
+class=updated datetime=2018-12-02T09:10:28+00:00>December 2, 2018</time></a></span>
+                                                            </div>
+                                                            <div class=entry-content>
+                                                                <%-   articleCat.body.slice(0, 60).concat('...')
+                                                                %>
+
+                                                            </div>
+                                                    </article>
+                                                    </div>
+
+                                                    <% }) %>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <nav class="navigation pagination" role=navigation>
+                                        <h2 class="screen-reader-text">Posts navigation</h2>
+                                        <div class=nav-links><span aria-current=page class='page-numbers current'><span
+class="meta-nav screen-reader-text"></span>1</span>
+                                            <a class=page-numbers href='page/2/index2630.html?content=list'><span
+class="meta-nav screen-reader-text"></span>2</a>
+                                            <a class="next page-numbers" href="page/2/index2630.html?content=list"><i
+class="fa fa-angle-right"></i></a></div>
+                                    </nav>
+                                </div>
+                                <div id=archive-sidebar class="sidebar sidebar-right  col-sx-12 col-sm-12 col-md-3 col-lg-3 archive-sidebar">
+                                    <div class=content-inner>
+                                        <aside id=slider_post-3 class="widget widget_slider_post">
+                                            <div class="archive-blog article-carousel" data-rtl=false data-table=2 data-number=1 data-mobile="1" data-mobilemin="1" data-dots=false data-arrows=false>
+                                                <article class="post-item post-tran clearfix post-638 post type-post status-publish format-video has-post-thumbnail hentry category-fashion-style category-tips-tricks tag-health tag-lifestyle tag-live tag-travel post_format-post-format-video">
+                                                    <div class=article-image>
+                                                        <div class=post-image>
+                                                            <a href="../../2017/07/29/group-of-five-female-sportswomen-having-legs-muscles-stretching-exercises-with-fitballs/index.html">
+                                                                <img class=lazy src=../../wp-content/uploads/2017/08/bloga18-530x698.jpg data-original=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga18-530x698.jpg data-src=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga18-530x698.jpg alt=post-image>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article-content ">
+                                                        <div class=article-content-inner>
+                                                            <div class="entry-header clearfix">
+                                                                <header class=entry-header-title>
+                                                                    <h3 class="entry-title"><a href=../../2017/07/29/group-of-five-female-sportswomen-having-legs-muscles-stretching-exercises-with-fitballs/index.html rel=bookmark>What Are Your Visual Demands?</a></h3>
+                                                                    <span class=post-cat> <a href=../fashion-style/index.html title="View all posts in Fashion &amp; Style">
+                                                                        Tell me about what you think your eye needs, I will figure out the rest and get you what you need! 
+                                                                        </span>
+                                                                    <div class="article-meta clearfix">
+                                                                        <span class=posted-on><span
+class=screen-reader-text>Posted on </span>
+                                                                        <a href=../../2017/07/29/group-of-five-female-sportswomen-having-legs-muscles-stretching-exercises-with-fitballs/index.html rel=bookmark><time class="entry-date published" datetime=2017-07-29T09:10:55+00:00>July 29, 2017</time><time class=updated datetime=2018-12-05T02:26:33+00:00>December 5, 2018</time></a>
+                                                                        </span>
+                                                                    </div>
+                                                                </header>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article class="post-item post-tran clearfix post-545 post type-post status-publish format-audio has-post-thumbnail hentry category-lifestyle category-tips-tricks tag-body-spa tag-heavenly-spa tag-lifestyle tag-spa tag-travel post_format-post-format-audio">
+                                                    <div class=article-image>
+                                                        <div class=post-image>
+                                                            <a href="../../2017/07/26/top-advice-for-travelling-as-a-big-ole-group/index.html">
+                                                                <img class=lazy src=../../wp-content/uploads/2017/08/bloga12-530x698.jpg data-original=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga12-530x698.jpg data-src=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga12-530x698.jpg alt=post-image>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article-content ">
+                                                        <div class=article-content-inner>
+                                                            <div class="entry-header clearfix">
+                                                                <header class=entry-header-title>
+                                                                    <h3 class="entry-title"><a href=../../2017/07/26/top-advice-for-travelling-as-a-big-ole-group/index.html rel=bookmark>Top advice for travelling as a big ole group</a></h3> <span class=post-cat>  <a
+href=index.html   title="View all posts in Lifestyle" >
+Lifestyle </a>
+, <a
+href=../tips-tricks/index.html  title="View all posts in Tips &amp; Tricks" >
+Tips &amp; Tricks </a>
+</span>
+                                                                    <div class="article-meta clearfix">
+                                                                        <span class=posted-on><span
+class=screen-reader-text>Posted on </span><a href=../../2017/07/26/top-advice-for-travelling-as-a-big-ole-group/index.html rel=bookmark><time
+class="entry-date published" datetime=2017-07-26T14:57:03+00:00>July 26, 2017</time><time
+class=updated datetime=2018-12-05T02:28:38+00:00>December 5, 2018</time></a></span>
+                                                                    </div>
+                                                                </header>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </aside>
+                                        <aside id=featured_post-4 class="widget widget_featured_post">
+                                            <h2 class="widgettitle">Other Categories</h2>
+                                            <div class="article-content archive-blog">
+                                                <div class=featured-post>
+                                                    <article class="post-item post-sidebar clearfix post-756 post type-post status-publish format-standard has-post-thumbnail hentry category-beauty category-lifestyle tag-fashion tag-lifestyle tag-news tag-style">
+                                                        <div class=article-image>
+                                                            <div class=post-image>
+                                                                <a href="../../2017/08/04/building-a-creative-space/index.html">
+                                                                    <img class=lazy src=../../wp-content/themes/ganesa/assets/images/layzyload-sidebar.jpg data-original=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga1-124x100.jpg data-src=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga1-124x100.jpg
+                                                                        alt=post-image>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="article-content side-item-text ">
+                                                            <div class="entry-header clearfix">
+                                                                <header class=entry-header-title>
+                                                                    <h3 class="entry-title">
+                                                                        <a href="/articles/article-category?category=Lifestyle" rel=bookmark>Lifestyle</a>
+                                                                    </h3>
+                                                                </header>
+                                                            </div>
+                                                            <div class="article-meta clearfix">
+                                                                <span class=posted-on><span
+class=screen-reader-text>Posted on </span><a href=../../2017/08/04/building-a-creative-space/index.html rel=bookmark><time
+class="entry-date published" datetime=2017-08-04T16:10:55+00:00>August 4, 2017</time><time
+class=updated datetime=2018-12-02T09:09:55+00:00>December 2, 2018</time></a></span>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+
+                                                    <article class="post-item post-sidebar clearfix post-741 post type-post status-publish format-standard has-post-thumbnail hentry category-beauty category-fashion-style tag-fashion tag-healthy tag-lifestyle tag-travel">
+                                                        <div class=article-image>
+                                                            <div class=post-image>
+                                                                <a href="../../2017/08/04/your-perfect-choice-for-nairobi-travels/index.html">
+                                                                    <img class=lazy src=../../wp-content/themes/ganesa/assets/images/layzyload-sidebar.jpg data-original=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga8-124x100.jpg data-src=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga8-124x100.jpg
+                                                                        alt=post-image>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="article-content side-item-text ">
+                                                            <div class="entry-header clearfix">
+                                                                <header class=entry-header-title>
+                                                                    <h3 class="entry-title"><a href="/articles/article-category?category=Lifestyle" rel=bookmark>Occupational.</a></h3>
+                                                                </header>
+                                                            </div>
+                                                            <div class="article-meta clearfix">
+                                                                <span class=posted-on><span
+class=screen-reader-text>Posted on </span><a href=../../2017/08/04/your-perfect-choice-for-nairobi-travels/index.html rel=bookmark><time
+class="entry-date published" datetime=2017-08-04T16:03:25+00:00>August 4, 2017</time><time
+class=updated datetime=2018-12-05T02:24:32+00:00>December 5, 2018</time></a></span>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="post-item post-sidebar clearfix post-734 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle tag-fashion tag-healthy tag-lifestyle">
+                                                        <div class=article-image>
+                                                            <div class=post-image>
+                                                                <a href="../../2017/08/04/free-on-site-drinks-at-nanocofe/index.html">
+                                                                    <img class=lazy src=../../wp-content/themes/ganesa/assets/images/layzyload-sidebar.jpg data-original=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga5-124x100.jpg data-src=https://ganesa.nanothemes.co/wp-content/uploads/2017/08/bloga5-124x100.jpg
+                                                                        alt=post-image>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="article-content side-item-text ">
+                                                            <div class="entry-header clearfix">
+                                                                <header class=entry-header-title>
+                                                                    <h3 class="entry-title"><a href="/articles/article-category?category=Lifestyle" rel=bookmark>Fashion.</a></h3>
+                                                                </header>
+                                                            </div>
+                                                            <div class="article-meta clearfix">
+                                                                <span class=posted-on><span
+class=screen-reader-text>Posted on </span><a href=../../2017/08/04/free-on-site-drinks-at-nanocofe/index.html rel=bookmark><time
+class="entry-date published" datetime=2017-08-04T15:57:51+00:00>August 4, 2017</time><time
+class=updated datetime=2018-12-01T09:55:23+00:00>December 1, 2018</time></a></span>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside id=ganesa_videos-2 class="widget widget_videos">
+                                            <h2 class="widgettitle">Hot Videos</h2>
+                                        </aside>
+                                        <aside id=fb_page-5 class="widget widget_fb_page">
+                                            <h2 class="widgettitle">Find us on facebook</h2>
+                                            <div class=fb-page data-href=https://www.facebook.com/themenano/ data-adapt-container-width=true data-hide-cover=false data-show-facepile=true data-show-posts=false></div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <%- include('./inc/footer.ejs') %>
+
+                </div>
+                <script>
+                    (function() {
+                        function addEventListener(element, event, handler) {
+                            if (element.addEventListener) {
+                                element.addEventListener(event, handler, false);
+                            } else if (element.attachEvent) {
+                                element.attachEvent('on' + event, handler);
+                            }
+                        }
+
+                        function maybePrefixUrlField() {
+                            if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+                                this.value = "http://" + this.value;
+                            }
+                        }
+                        var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+                        if (urlFields && urlFields.length > 0) {
+                            for (var j = 0; j < urlFields.length; j++) {
+                                addEventListener(urlFields[j], 'blur', maybePrefixUrlField);
+                            }
+                        }
+                        var testInput = document.createElement('input');
+                        testInput.setAttribute('type', 'date');
+                        if (testInput.type !== 'date') {
+                            var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+                            for (var i = 0; i < dateFields.length; i++) {
+                                if (!dateFields[i].placeholder) {
+                                    dateFields[i].placeholder = 'YYYY-MM-DD';
+                                }
+                                if (!dateFields[i].pattern) {
+                                    dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+                                }
+                            }
+                        }
+                    })();
+                </script>
+                <script>
+                    var wpcf7 = {
+                        "apiSettings": {
+                            "root": "https:\/\/ganesa.nanothemes.co\/wp-json\/contact-form-7\/v1",
+                            "namespace": "contact-form-7\/v1"
+                        },
+                        "cached": "1"
+                    };
+                </script>
+                <script src=../../wp-content/cache/minify/c903a.js></script>
+                <script>
+                    var NaScript = {
+                        "home_url": "https:\/\/ganesa.nanothemes.co\/",
+                        "ajax_url": "https:\/\/ganesa.nanothemes.co\/wp-admin\/admin-ajax.php?_wpnonce=8ed11daafd",
+                        "admin_theme_url": "https:\/\/ganesa.nanothemes.co\/wp-admin\/themes.php?_wpnonce=8ed11daafd"
+                    };
+                </script>
+                <script src=../../wp-content/cache/minify/d8001.js></script>
+                <script>
+                    var mc4wp_forms_config = [];
+                </script>
+                <script src=../../wp-content/cache/minify/29e8b.js></script>
+                <!--[if lte IE 9]> <script src='https://ganesa.nanothemes.co/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.5.0'></script> <![endif]-->
+    </body>
+    <!-- Mirrored from ganesa.nanothemes.co/category/lifestyle/?content=list by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Jul 2022 03:42:26 GMT -->
+
+</html>
