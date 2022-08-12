@@ -4,7 +4,7 @@ const express = require('express');
 
 const mongoose = require('mongoose');
 
-const PORT = config.PORT || '5000'
+const PORT = process.env.PORT || config.PORT || '5000'
 
 const methodOverride = require('method-override')
 
@@ -29,4 +29,4 @@ app.set('view engine', 'ejs')
 
 app.use('/articles', articleRouter)
 
-app.listen(5000);
+app.listen(PORT);
