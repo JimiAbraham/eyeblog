@@ -29,4 +29,8 @@ app.set('view engine', 'ejs')
 
 app.use('/articles', articleRouter)
 
-app.listen(PORT);
+
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+// app.listen(PORT);
