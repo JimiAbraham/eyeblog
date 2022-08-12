@@ -8,9 +8,12 @@ const PORT = config.PORT || '5000'
 
 const methodOverride = require('method-override')
 
-const mongo_Db = config.mongoDB || 'mongodb://localhost/eyesCool'
+const MONGO_DB = config.MONGO_DB || 'mongodb://localhost/eyesCool'
 
-mongoose.connect(mongo_Db)
+
+// LfU2nFTRrUPHWsUE    eyeBlog
+
+mongoose.connect(MONGO_DB)
 
 const app = express();
 
