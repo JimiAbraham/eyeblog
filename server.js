@@ -2,6 +2,8 @@ const express = require('express');
 
 const mongoose = require('mongoose');
 
+const PORT  = process.env.PORT || '8080'
+
 const methodOverride = require('method-override')
 
 mongoose.connect('mongodb://localhost/eyesCool')
@@ -21,4 +23,6 @@ app.set('view engine', 'ejs')
 app.use('/articles', articleRouter)
 
 
-app.listen(5000);
+//app.listen(5000);
+
+app.set("port",PORT )
