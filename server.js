@@ -8,10 +8,12 @@ const PORT = process.env.PORT || '5000'
 
 const methodOverride = require('method-override')
 
-const MONGO_DB = config.MONGO_DB || 'mongodb://localhost/eyesCool'
+//const MONGO_DB = config.MONGO_DB || 'mongodb://localhost/eyesCool'
 
+//console.log(process.env.MONGO_DB)
 
-// LfU2nFTRrUPHWsUE    eyeBlog
+const MONGO_DB = process.env.MONGO_DB
+    // LfU2nFTRrUPHWsUE    eyeBlog
 
 mongoose.connect(MONGO_DB)
 
@@ -33,4 +35,3 @@ app.use('/articles', articleRouter)
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
-// app.listen(PORT);
